@@ -1,0 +1,163 @@
+@import "./variables.sass"
+
+// general classes START
+body
+  margin: 0
+  background-color: #232A34
+.whole-screen-width
+  width: 100%
+.max-width
+  max-width: $max-width
+  margin: auto
+  overflow: hidden
+.flex
+  display: flex
+.content-space-between
+  justify-content: space-between
+.absolutely-centered
+  display: flex
+  justify-content: center
+  align-items: center
+// general classes END
+
+// BaseComponents classes START
+  // BaseButton START
+.btn
+  font-size: 16px
+  font-weight: bold
+  padding: 12px 35px
+  border-radius: $btn-border-radius
+  border: none
+.btn-margin-left
+  margin-left: 15px
+.btn-normal
+  background-color: #30373F
+  color: $text-color
+.btn-success
+  background-color: #22D56D
+  color: white
+  // BaseButton END
+
+  // BaseContentWithImages START
+.top-content-img
+  width: 49%
+  border-radius: $icon-border-radius
+  // BaseContentWithImages END
+    
+  // BaseHeader START
+.h1-text
+  color: white
+  font-size: 22px
+  text-align: left
+  padding: 15px 0 10px
+  // BaseHeader END
+// BaseComponents classes END
+
+// navigation bar START
+.nav-background-color
+  background-color: #1A212B
+.nav-holder
+  width: 100%
+  padding: 15px 0
+  display: flex
+  align-items: center
+  color: $text-color
+.nav-dropdown
+  border: 1px solid #2D343E
+  border-radius: $btn-border-radius
+  padding: 10px
+.dropdown-language
+  padding-right: 30px
+// navigation bar END
+
+// Header START
+.header-holder
+  padding: 20px 0
+.header-icon
+  height: 33px
+  padding: 0 10px
+.header-text
+  width: 70px
+  text-align: left
+  color: $text-color
+  border-right: 1px solid $dark-border-color
+  padding-right: 20px
+  font-size: 12px
+// Header END
+
+// SportsCategories START
+.sports-categories-icon-text-wrapper
+  width: 100%
+  display: -webkit-inline-box
+  overflow: hidden
+.sports-categories-icon-text-holder
+  width: 53.3px
+  flex-direction: column
+  margin-right: 10px
+.sports-categories-icon-holder
+  height: 55px
+  background-color: #19202A
+  border-radius: $icon-border-radius
+  margin-bottom: 6px
+.sports-categories-icon
+  width: 30px
+  height: 30px
+.sports-categories-icon-text
+  color: $text-color
+  font-size: 10.5px
+  line-height: 16px
+// SportsCategories END
+
+// GameProviders START
+.game-providers-content-holder
+  padding-bottom: $padding-top-or-bottom
+  border-bottom: 1px solid $dark-border-color
+.game-providers-image-holder
+  width: calc( #{$max-width} / #{$game-providers-images-count} - 10px )
+  border-radius: 5px
+  background-color: white
+.game-providers-image
+  padding: 10px 0
+// GameProviders END
+
+// Footer START
+.footer
+  padding: $padding-top-or-bottom  0 70px
+  // FooterFirstColumn START
+.footer-first-column
+  width: $footer-first-column-width
+  text-align: left
+  font-size: 13px
+  color: $text-color
+.footer-first-column-img
+  padding-bottom: 20px
+  // FooterFirstColumn END
+  // FooterNexttColumn START
+.footer-next-column
+  width: $footer-next-column-width
+.footer-h1-text
+  color: white
+  text-align: left
+.footer-links-holder
+  text-align: left
+  padding-top: 20px
+  // FooterNexttColumn END
+  // FooterLink START
+.footer-link
+  color: $text-color
+  text-decoration: none
+  font-size: 13px
+  line-height: 22px
+  // FooterLink END
+  // FooterLastColumn START
+.footer-last-column
+  width: $footer-last-column-width
+.footer-social-img-holder
+  width: $footer-social-img-dimensions
+  height: $footer-social-img-dimensions
+  border-radius: 50%
+  background-color: #30373F
+.footer-social-img
+  padding: 10px
+  // FooterLastColumn END
+// Footer END
